@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share Bike</title>
+</head>
+<body>
+<form  action="{{ url_for('predict')}}" method="post">
+Temperature: <input type="text"  name = "temp" aria-label="Temperature">
+  <br>Is It Spring Season ? 0/1
+<input type="number" name = "spring" aria-label="Is It Spring Season ?">
+  <br>Is It year 2019 ? 0/1
+<input type="number" name = "year" aria-label="2019?"><br>Is It month September ? 0/1
+<input type="number" name = "month" aria-label="September?">
+  <br>Is It a Holiday ? 0/1
+<input type="number" name = "holiday" aria-label="Holiday?">
+  <br>Is It Misty ? 0/1
+<input type="number" name = "misty" aria-label="Misty?">
+  <br>Is It Raining ? 0/1
+<input type="number" name = "rainy" aria-label="Rainy?">
+  <br>
+    <input type="submit" aria-label="Predict" >
+
+</form>
+</body>
+</html>
